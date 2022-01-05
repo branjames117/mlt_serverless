@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murfreesboro Little Theater</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/145a4f5b13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main site container -->
+    <div id="container">
+      <div>
+        <!-- header / nav bar -->
+        <header>
+          <nav id="full-nav">
+            <h1 id="menu-title">
+              <a href="/">
+                <div><span class="letter-accent">M</span>urfreesboro</div>
+                <div><span class="letter-accent">L</span>ittle</div>
+                <div><span class="letter-accent">T</span>heatre</div>
+              </a>
+            </h1>
+            <div id="menu-mobile">
+              <div id="floating-links">
+                <button id="floating-btn">
+                  <a href="./now-showing.html">Now Showing</a>
+                </button>
+              </div>
+              <div id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="menu-list-md">
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+          <nav id="mobile-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <!-- Membership cards -->
+          <section id="membership">
+            <h2>Membership</h2>
+            <div class="bordered-container">
+              <h3>Why become a member of MLT?</h3>
+              <p>Memberships are tax deductible!</p>
+              <p>Pay only $5 for show tickets!</p>
+              <p>Vote at the Annual Membership meeting!</p>
+              <p>Support the arts in Murfreesboro!</p>
+            </div>
+            <div id="cards">
+              <div class="card">
+                <span class="card-price">$25<span>/yr</span></span>
+                <h3>Individual</h3>
+                <span>
+                  A single person membership that runs for a full calendar year
+                  from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="U7DGK8HZ7VUJG"
+                  />
+                  <input type="hidden" name="mt0" value="indiv" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$40<span>/yr</span></span>
+                <h3>Couple</h3>
+                <span>
+                  A two-person membership that runs for a full calendar year
+                  from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="YZDEDVJVRHBQ8"
+                  />
+                  <input type="hidden" name="mt0" value="cpl" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$50<span>/yr</span></span>
+                <h3>Family</h3>
+                <span>
+                  A family membership, no matter how many children you have, for
+                  a full calendar year from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="A43WA8DS995PU"
+                  />
+                  <input type="hidden" name="mt0" value="fm" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$100<span>/yr</span></span>
+                <h3>Business</h3>
+                <span>
+                  Starting at $100 and going up based on ad size in our
+                  programs, plus the benefits of membership!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="GPJVM2Q94CEB4"
+                  />
+                  <input type="hidden" name="mt0" value="bns" />
+                  <input
+                    type="hidden"
+                    name="on0"
+                    value="Business Membership Type"
+                  />
+                  <label for="os0">Business Membership Type</label>
+                  <select name="os0" class="mb-4 w-full">
+                    <option value="Small">Small $100 USD</option>
+                    <option value="Medium">Medium $300 USD</option>
+                    <option value="Large">Large $500 USD</option>
+                  </select>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+            </div>
+            <div class="bordered-container">
+              <p>
+                After your payment is made, you will be redirected to a
+                Membership Information form. Please fill out this form to ensure
+                that we have your most up-to-date information.
+              </p>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer / contact -->
+      </div>
+      <!-- This is part of container that pushes footer to bottom of page -->
+      <div>
+        <footer>
+          <div>
+            <div>
+              <div>
+                <a
+                  href="https://www.facebook.com/Murfreesboro-Little-Theatre-53156980658/"
+                  target="new"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/murfreesboro_little_theatre/"
+                  target="new"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+                <a
+                  href="https://twitter.com/borosliltheatre?lang=en"
+                  target="new"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </div>
+              <p>
+                Murfreesboro Little Theatre<br />
+                P.O. Box 952<br />
+                Murfreesboro, TN 37130<br />
+                (615) 893-9825
+              </p>
+            </div>
+
+            <img src="./public/img/logo.png" />
+
+            <div>
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="77PY97HNWCJ2L"
+                />
+                <button
+                  name="submit"
+                  title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                >
+                  Donate
+                </button>
+              </form>
+              <p>
+                Murfreesboro Little Theatre<br />
+                is a 501(c)3 non-profit that<br />
+                relies on donations and ticket<br />
+                sales to serve the community.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

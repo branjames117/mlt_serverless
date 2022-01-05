@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murfreesboro Little Theater</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/145a4f5b13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main site container -->
+    <div id="container">
+      <div>
+        <!-- header / nav bar -->
+        <header>
+          <nav id="full-nav">
+            <h1 id="menu-title">
+              <a href="/">
+                <div><span class="letter-accent">M</span>urfreesboro</div>
+                <div><span class="letter-accent">L</span>ittle</div>
+                <div><span class="letter-accent">T</span>heatre</div>
+              </a>
+            </h1>
+            <div id="menu-mobile">
+              <div id="floating-links">
+                <button id="floating-btn">
+                  <a href="./now-showing.html">Now Showing</a>
+                </button>
+              </div>
+              <div id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="menu-list-md">
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+          <nav id="mobile-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <!-- call to action / hero -->
+          <div id="cta">
+            <div>
+              <h2>
+                <div>
+                  Since 1962.<br />
+                  60 Years of Continuous<br />
+                  Community Theatre.
+                </div>
+              </h2>
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="77PY97HNWCJ2L"
+                />
+                <button
+                  id="cta-donate-btn"
+                  name="submit"
+                  title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                >
+                  Donate
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <i class="fas fa-chevron-down"></i>
+
+          <!-- announcements -->
+          <section id="announcements">
+            <h2>Announcements</h2>
+            <div id="announcements-background">
+              <div id="announcements-container">
+                <h3>Directors for MLT's 60th Season!</h3>
+                <p>
+                  "Constellations" by Nick Payne<br />
+                  Directed by E. Roy Lee
+                </p>
+                <p>
+                  "Miss Nelson Is Missing!" Adapted by Jeffery Hatcher<br />
+                  Directed by Emma Hawkins
+                </p>
+                <p>
+                  "Spirit Level" by Pam Valentine<br />
+                  Directed by Keri Lambert
+                </p>
+                <p>
+                  "Grand Finale" by Lauren Street<br />
+                  Directed by Zoe Zent
+                </p>
+                <p>
+                  "The Curious Incident of the Dog in the Nighttime" Adapted by
+                  Simon Stephens<br />
+                  Directed by Catherine Burford and Shane Lowery
+                </p>
+                <p>
+                  "Macbeth" by William Shakespeare<br />
+                  Directed by Todd Seage
+                </p>
+                <p>
+                  "Always a Bridesmaid" by Nicholas Hope, Jessie Jones, and
+                  James Wooten
+                  <br />Directed by Cyndie Verbeten
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <i class="fas fa-chevron-down"></i>
+
+          <!-- Membership cards -->
+          <section id="membership">
+            <h2>Membership</h2>
+            <div class="bordered-container">
+              <h3>Why become a member of MLT?</h3>
+              <p>Memberships are tax deductible!</p>
+              <p>Pay only $5 for show tickets!</p>
+              <p>Vote at the Annual Membership meeting!</p>
+              <p>Support the arts in Murfreesboro!</p>
+            </div>
+            <div id="cards">
+              <div class="card">
+                <span class="card-price">$25<span>/yr</span></span>
+                <h3>Individual</h3>
+                <span>
+                  A single person membership that runs for a full calendar year
+                  from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="U7DGK8HZ7VUJG"
+                  />
+                  <input type="hidden" name="mt0" value="indiv" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$40<span>/yr</span></span>
+                <h3>Couple</h3>
+                <span>
+                  A two-person membership that runs for a full calendar year
+                  from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="YZDEDVJVRHBQ8"
+                  />
+                  <input type="hidden" name="mt0" value="cpl" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$50<span>/yr</span></span>
+                <h3>Family</h3>
+                <span>
+                  A family membership, no matter how many children you have, for
+                  a full calendar year from when you become a member!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="A43WA8DS995PU"
+                  />
+                  <input type="hidden" name="mt0" value="fm" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+              <div class="card">
+                <span class="card-price">$100<span>/yr</span></span>
+                <h3>Business</h3>
+                <span>
+                  Starting at $100 and going up based on ad size in our
+                  programs, plus the benefits of membership!
+                </span>
+                <form
+                  action="https://www.paypal.com/cgi-bin/webscr"
+                  method="post"
+                  target="_top"
+                >
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input
+                    type="hidden"
+                    name="hosted_button_id"
+                    value="GPJVM2Q94CEB4"
+                  />
+                  <input type="hidden" name="mt0" value="bns" />
+                  <input
+                    type="hidden"
+                    name="on0"
+                    value="Business Membership Type"
+                  />
+                  <label for="os0">Business Membership Type</label>
+                  <select name="os0" class="mb-4 w-full">
+                    <option value="Small">Small $100 USD</option>
+                    <option value="Medium">Medium $300 USD</option>
+                    <option value="Large">Large $500 USD</option>
+                  </select>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <button
+                    name="submit"
+                    alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                    title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  >
+                    Join Now
+                  </button>
+                </form>
+                <span>Via PayPal</span>
+              </div>
+            </div>
+            <div class="bordered-container">
+              <p>
+                After your payment is made, you will be redirected to a
+                Membership Information form. Please fill out this form to ensure
+                that we have your most up-to-date information.
+              </p>
+            </div>
+          </section>
+
+          <i class="fas fa-chevron-down"></i>
+
+          <!-- Sponsors -->
+          <section id="sponsors">
+            <h2>Sponsors Highlight</h2>
+            <div
+              class="grid grid-cols-1 gap-5 gap-y-8 text-white text-center w-full mx-auto md:grid-cols-2 xl:w-4/5"
+            >
+              <!-- Sponsor 1 -->
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <img
+                  src="./public/img/sponsors/bartlettfamily.jpg"
+                  class="rounded-md"
+                />
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>
+                    MLT continues “GIVING THANKS” to our Business Memberships by
+                    thanking the support of one of our newest Business Members,
+                    Caroline Bartlett.
+                  </p>
+                  <p>
+                    Caroline is a Visual Art Teacher at Cannon County Schools
+                    and the mother of very talented young actor, Charlie. You
+                    may have seen Charlie, as Wilbur, in CFTA’s recent
+                    production of “Charlotte’s Web” or as Randy in ACCC’s
+                    production of “A Christmas Story” or you may have seen him
+                    with MLT in “Fun Home” and “Tales from Neverland”. So, it is
+                    not surprising that Caroline’s message is “Children Need
+                    Art.” Here at MLT we 100% agree with Caroline and have
+                    created youth opportunities with our virtual Christmas
+                    production and are preparing for a future production of
+                    “Junie B is not a Crook” as well as summer camps.
+                  </p>
+                  <p>
+                    We hope to have both Caroline and Charlie back with MLT soon
+                    and we thank them for their talents and their continued
+                    support.
+                  </p>
+                </div>
+              </div>
+              <!-- Sponsor 2 -->
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <img
+                  src="./public/img/sponsors/christopherquarto.jpg"
+                  class="rounded-md"
+                />
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>
+                    MLT continues “GIVING THANKS” to our Business Memberships
+                    this week by featuring a business member that every theatre
+                    group needs: a licensed psychologist!
+                  </p>
+                  <p>
+                    Chris Quarto (and the whole Quarto family – Kathy, Luke and
+                    Michelle) became involved with MLT back in 2006, and he and
+                    wife Kathy have been faithful supporters ever since. In
+                    fact, Chris was the original designer and webmaster for our
+                    MLTArts.com site. Chris specializes in providing services
+                    for Attention Deficit/Hyperactivity Disorder, and has worked
+                    with children, adolescents and adult suffering from anxiety,
+                    depression and relationship issues. Most recently, Dr.
+                    Quarto created a podcast series for graduate students and
+                    the general public called "Make a Mental Note" (<a
+                      href="https://rb.gy/md1mwf"
+                      target="new"
+                      >https://rb.gy/md1mwf</a
+                    >) in which he interviewed mental health professionals on
+                    topics such as trauma, addiction and women's issues. In this
+                    world, we can all use someone understanding and objective,
+                    and Dr. Chris fits the bill! He has always been there for
+                    MLT!
+                  </p>
+                </div>
+              </div>
+              <!-- Sponsor 3 -->
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <img
+                  src="./public/img/sponsors/kathyquarto.jpg"
+                  class="rounded-md"
+                />
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>
+                    MLT continues “GIVING THANKS” to our Business Memberships
+                    this week by featuring musical director, teacher and
+                    songbird, Kathy Quarto.
+                  </p>
+                  <p>
+                    Like her husband Chris, Kathy became involved with MLT back
+                    in 2006 - and has been a strong presence on and off the
+                    stage. If you are a fan of MLT musicals, you will recognize
+                    her lovely face, and remember her lovely voice, in “High
+                    Society”, “Working”, “The 1940's Radio Hour”, “Chess” and
+                    most recently as Mdme Dubonnet in “The Boy Friend”. Behind
+                    the MLT scenes, she has served as Secretary on the Board of
+                    Directors, as well as bring the proud mom of Luke and
+                    Michelle (who have also performed on the MLT stage on number
+                    occasions). Kathy adores playing the drums and is band
+                    director at Rockvale Middle School, and is deeply committed
+                    to her church, Saint Henry Catholic Church in Nashville -
+                    where, you guessed it - she sings and plays the drums! In
+                    her spare time, Kathy is YOUR local Mary Kay Cosmetics
+                    representative, and is always happy to share beauty tips,
+                    offer free samples, lead a virtual party or a party with
+                    friends, or tailor a consultation just for you. As we often
+                    joke, “Dr. Chris will fix your head, Ms. Kathy will fix your
+                    face”.
+                  </p>
+                  <p>
+                    Thanks to the entire Quarto Family for their many years of
+                    ongoing support of MLT.
+                  </p>
+                </div>
+              </div>
+              <!-- Sponsor 4 -->
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <img
+                  src="./public/img/sponsors/whatcreativegroup.jpg"
+                  class="rounded-md"
+                />
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>
+                    MLT continues “GIVING THANKS” to our Business Memberships by
+                    highlighting one of our newest Business Members, WHAT.
+                    Creative Group.
+                  </p>
+                  <p>
+                    WHAT. Creative Group focuses on Visual Art in the Middle TN
+                    area, specializing in public art and community projects.
+                    Located in the heart of East Nashville, TN, owner/operator
+                    Jake Elliott has created multiple works of art in the
+                    Nashville area including murals at the Nashville Library,
+                    the Nashville airport, the Gulch, West Nashville, basically
+                    anywhere you look in Nashville you can find Jake's
+                    incredible work.
+                  </p>
+                  <p>
+                    When it comes to MLT, Jake works alongside Shane Lowery (our
+                    current MLT President) as a hydrologic data technician.
+                    Together they have brainstormed and developed many of the
+                    sets you have seen on the MLT stage. We are happy to have
+                    Jake’s support and encourage you to check out his work at
+                    <a
+                      href="https://www.facebook.com/What.Nashville"
+                      target="new"
+                      >https://www.facebook.com/What.Nashville</a
+                    >.
+                  </p>
+                </div>
+              </div>
+              <!-- Sponsor 5 -->
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <img src="./public/img/sponsors/mtar.jpg" class="rounded-md" />
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>
+                    MLT kicks off “GIVING THANKS” for our Business Memberships
+                    by highlighting the Middle Tennessee Association of
+                    REALTORS, better know as MTAR!
+                  </p>
+                  <p>
+                    Yes, MTAR has been supporting MLT longer than any business
+                    member we have – and not just thru an annual membership, but
+                    in countless other ways. MTAR has been a resource that MLT
+                    has depended on since 2000, ever since Candy Joyce, the
+                    Association’s Executive, auditioned for a role in “Mame”.
+                    After kicking up her heels and singing her heart out, Candy
+                    has been heavily involved ever since. From her performances
+                    In “Cotton Patch Gospel” and “Some Enchanted Evening” to the
+                    recent radio production “Sorry, Wrong Number”, her REALTORS
+                    have backed her support of the arts. Whether she was getting
+                    REALTORS involved in productions, providing rehearsal space,
+                    serving as MLT President, or representing MLT to the City,
+                    Candy and MTAR have proven to be one of MLT’s greatest
+                    assets!
+                  </p>
+                  <p>
+                    To Candy and the almost 2,300 MTAR REALTORS that make a
+                    difference in our community in so many ways, we humbly thank
+                    you for your support!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sponsor flex flex-col gap-5 w-full bg-blue-800 bg-opacity-50 rounded-2xl"
+              >
+                <div>
+                  <a href="https://tnartscommission.org/" target="new"
+                    ><img
+                      class="rounded-t-md"
+                      src="./public/img/sponsors/tnartscommission.jpg"
+                  /></a>
+                  <a href="https://tnspecialtyplates.org/" target="new"
+                    ><img
+                      class="rounded-b-md"
+                      src="./public/img/sponsors/tnlicense.jpg"
+                  /></a>
+                </div>
+                <div class="pb-10 px-2 text-sm text-left flex flex-col gap-6">
+                  <p>Want to show your support for the arts to the world?</p>
+                  <p>
+                    Visit the
+                    <a href="https://tnartscommission.org/" target="new"
+                      >TN Arts Comission</a
+                    >
+                    and support both MLT and the arts in Tennessee by purchasing
+                    a
+                    <a href="https://tnspecialtyplates.org/" target="new"
+                      >customized license plate</a
+                    >!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center w-full mx-auto mt-8 xl:w-4/5">
+              <a href="https://penguinproject.org/" target="new"
+                ><img
+                  class="rounded-2xl"
+                  src="./public/img/sponsors/penguinproject.png"
+              /></a>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer / contact -->
+      </div>
+      <!-- This is part of container that pushes footer to bottom of page -->
+      <div>
+        <footer>
+          <div>
+            <div>
+              <div>
+                <a
+                  href="https://www.facebook.com/Murfreesboro-Little-Theatre-53156980658/"
+                  target="new"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/murfreesboro_little_theatre/"
+                  target="new"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+                <a
+                  href="https://twitter.com/borosliltheatre?lang=en"
+                  target="new"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </div>
+              <p>
+                Murfreesboro Little Theatre<br />
+                P.O. Box 952<br />
+                Murfreesboro, TN 37130<br />
+                (615) 893-9825
+              </p>
+            </div>
+
+            <img src="./public/img/logo.png" />
+
+            <div>
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="77PY97HNWCJ2L"
+                />
+                <button
+                  name="submit"
+                  title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                >
+                  Donate
+                </button>
+              </form>
+              <p>
+                Murfreesboro Little Theatre<br />
+                is a 501(c)3 non-profit that<br />
+                relies on donations and ticket<br />
+                sales to serve the community.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

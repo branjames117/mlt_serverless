@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murfreesboro Little Theater</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/145a4f5b13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main site container -->
+    <div id="container">
+      <div>
+        <!-- header / nav bar -->
+        <header>
+          <nav id="full-nav">
+            <h1 id="menu-title">
+              <a href="/">
+                <div><span class="letter-accent">M</span>urfreesboro</div>
+                <div><span class="letter-accent">L</span>ittle</div>
+                <div><span class="letter-accent">T</span>heatre</div>
+              </a>
+            </h1>
+            <div id="menu-mobile">
+              <div id="floating-links">
+                <button id="floating-btn">
+                  <a href="./now-showing.html">Now Showing</a>
+                </button>
+              </div>
+              <div id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="menu-list-md">
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+          <nav id="mobile-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <!-- family membership -->
+          <section>
+            <h2>Family Membership Form</h2>
+            <div
+              class="flex flex-col gap-0 w-full bg-black bg-opacity-50 pt-5 pb-10 px-1 mx-auto text-center rounded-2xl"
+            >
+              <div class="mb-12 rounded-2xl p-3 mx-auto xl:w-4/5">
+                <h3 class="text-xl text-yellow-500">Welcome Home!</h3>
+                <p class="mb-3">Thank you for your support of local theatre!</p>
+                <p class="mb-3">
+                  For all new memberships and membership renewals, please fill
+                  out the form below so we have your most up-to-date
+                  information.
+                </p>
+                <p class="mb-3">
+                  Your information is kept private. However, given permission
+                  below, your name will be listed on all printed programs for
+                  productions and on our website. Your email address and home
+                  address are used to reach out to you about auditions, upcoming
+                  productions, and events.
+                </p>
+                <p class="mb-3">Fields marked * are required.</p>
+
+                <form
+                  class="px-8 pt-6 pb-8 mb-4"
+                  action="/api/membership-application"
+                  method="POST"
+                  id="membership-form"
+                >
+                  <input type="hidden" name="type" id="type" value="Family" />
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="name">
+                      Full Name *
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="birthday">
+                      Birthday (MM/DD) *
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="birthday"
+                      name="birthday"
+                      type="text"
+                      placeholder="MM/DD"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="others">
+                      Name of those included in the Family Membership and
+                      Birthday (MM/DD) *
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="others"
+                      name="others"
+                      type="text"
+                      placeholder="Full Name, MM/DD, Full Name, MM/DD, etc."
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="address">
+                      Mailing Address<br />(Street, City, State, ZIP) *
+                    </label>
+                    <textarea
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="address"
+                      name="address"
+                      type="text"
+                      rows="3"
+                      maxlength="150"
+                      placeholder="Mailing Address"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="phone">
+                      Best Contact Number *
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="phone"
+                      name="phone"
+                      type="text"
+                      placeholder="Phone #"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="email">
+                      Email Address *
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      required
+                      id="email"
+                      name="email"
+                      type="text"
+                      placeholder="Email Address"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="referred">
+                      If you were referred, who referred you?
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      id="referred"
+                      name="referred"
+                      type="text"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="consent">
+                      Do you give permission to have your name(s) listed on our
+                      website/on social media/in our program? *
+                    </label>
+                    <div class="flex flex-row gap-2 justify-center w-100">
+                      <div>
+                        <input
+                          type="radio"
+                          id="consent-yes"
+                          checked
+                          name="consent"
+                          value="Yes"
+                        />
+                        <label for="consent-yes">Yes</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          id="consent-no"
+                          name="consent"
+                          value="No"
+                        />
+                        <label for="consent-no">No</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label
+                      class="block text-sm font-bold mb-2"
+                      for="listingPreference"
+                    >
+                      If yes, how would you like to be listed?
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      id="listingPreference"
+                      name="listingPreference"
+                      type="text"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <button type="submit">Submit</button>
+                    <span
+                      class="inline-block align-baseline font-bold text-sm text-yellow-500 hover:text-blue-800"
+                      href="#"
+                      id="clear-form"
+                    >
+                      Clear Form
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer / contact -->
+      </div>
+      <!-- This is part of container that pushes footer to bottom of page -->
+      <div>
+        <footer>
+          <div>
+            <div>
+              <div>
+                <a
+                  href="https://www.facebook.com/Murfreesboro-Little-Theatre-53156980658/"
+                  target="new"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/murfreesboro_little_theatre/"
+                  target="new"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+                <a
+                  href="https://twitter.com/borosliltheatre?lang=en"
+                  target="new"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </div>
+              <p>
+                Murfreesboro Little Theatre<br />
+                P.O. Box 952<br />
+                Murfreesboro, TN 37130<br />
+                (615) 893-9825
+              </p>
+            </div>
+
+            <img src="./public/img/logo.png" />
+
+            <div>
+              <form
+                action="https://www.paypal.com/donate"
+                method="post"
+                target="_top"
+              >
+                <input
+                  type="hidden"
+                  name="hosted_button_id"
+                  value="77PY97HNWCJ2L"
+                />
+                <button
+                  name="submit"
+                  title="You will be redirected to PayPal. MLT does not store any of your payment information."
+                  alt="You will be redirected to PayPal. MLT does not store any of your payment information."
+                >
+                  Donate
+                </button>
+              </form>
+              <p>
+                Murfreesboro Little Theatre<br />
+                is a 501(c)3 non-profit that<br />
+                relies on donations and ticket<br />
+                sales to serve the community.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

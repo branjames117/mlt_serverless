@@ -1,6 +1,6 @@
 # Murfreesboro Little Theater - since 1962
 
-# 59 Years of Continuous Community Theater
+# 60 Years of Continuous Community Theater
 
 - Mobile responsive using Tailwind CSS and a collapsible menu for mobile.
 
@@ -39,9 +39,3 @@
 ## Footer
 
 - Mailing address, donation button, links to social (FB, Twitter, Insta).
-
-## Backend
-
-- Processing Membership forms following successful PayPal payment:
-  - Member information is stored in a database, with "Name or Business Name" "Email Address" "Plan (Individual, Couple, Family, Business)" "Membership Activated" "Membership Expires" "Active Member"
-  - An email is also generated that is sent to the person in charge of memberships so they know a new member plan was just purchased. Use Nodemailer module and a throwaway gmail account.

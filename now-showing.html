@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murfreesboro Little Theater</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/145a4f5b13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main site container -->
+    <div id="container">
+      <div>
+        <!-- header / nav bar -->
+        <header>
+          <nav id="full-nav">
+            <h1 id="menu-title">
+              <a href="/">
+                <div><span class="letter-accent">M</span>urfreesboro</div>
+                <div><span class="letter-accent">L</span>ittle</div>
+                <div><span class="letter-accent">T</span>heatre</div>
+              </a>
+            </h1>
+            <div id="menu-mobile">
+              <div id="floating-links">
+                <button id="floating-btn">
+                  <a href="./now-showing.html">Now Showing</a>
+                </button>
+              </div>
+              <div id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="menu-list-md">
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+          <nav id="mobile-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+<main>
+  <!-- now showing -->
+  <section id="now-showing">
+    <h2>Now Showing</h2>
+    <div class="rounded-2xl">
+      <div
+        class="
+          flex flex-col
+          gap-0
+          w-full
+          bg-black bg-opacity-50
+          pt-5
+          pb-10
+          px-1
+          mx-auto
+          text-center
+          rounded-2xl
+        "
+      >
+        <h3 class="text-4xl text-center text-yellow-500 mb-0"><span class="letter-accent">G</span>rand <span class="letter-accent">F</span>inale</h3>
+        <h4 class="text-2xl mb-5">By Lauren Street</h4>
+        <a href="https://tickets.mltarts.com/" target=""><button
+          class="
+            text-2xl text-black
+            bg-yellow-500
+            h-10
+            w-48
+            rounded-xl
+            px-2
+            pb-1
+            mb-4
+            mx-auto
+            disabled
+            hover:bg-yellow-400
+          "
+        >
+        Buy Tickets
+      </button></a>
+      <p class="mb-8">Please review our <a href="./ticket-policy.html">Ticket Policy</a> before purchasing your ticket(s).</p>
+        <div class="grid grid-cols-1 gap-8 justify-between w-100 mx-4 w-100 xl:grid-cols-2 xl:mx-24">
+          <div class="leading-7 mx-0 px-0">
+            <p>Directed by Zoë Zent</p>
+            <p>January 6, 7, 8, 9<br />
+            Thursday-Saturday 7pm<br />
+            Sunday 2pm</p>
+            <p>The Walnut House<br />
+            116 N Walnut St<br />
+            Murfreesboro, TN 37130-3554</p>
+            <p class="text-left mt-8">It's the day of Granddaddy's funeral, and no one has showed up. Rebecca is distraught about her Daddy dying. Caroline and Kathryn are apathetic, spiteful and full of smart-aleck remarks. Caroline is hateful and Kathryn is more interested in getting to a dance later that evening. Evan arrives late with his boyfriend Marshall (who Kathryn keeps hitting on). Evan seems only interested in drinking and leaving especially after insensitive and racist remarks from his Aunt Rebecca about Marshall and their relationship. Brother George is kindly confused about all the drama and frequently falling asleep. Amidst the fighting, the lack of mourners, the botched eulogy, they try to carry the casket out only for the unthinkable to happen. This adds to the hysterics, which culminate in revelations of family secrets, clearing of misunderstandings, and a final understanding of why no one showed up for the funeral.</p>
+          </div>
+          <div>
+            <img class="mb-6 rounded-2xl" src="./public/img/now-showing/slide2.jpg" />
+            <img class="rounded-2xl" src="./public/img/now-showing/slide1.jpg" />
+          </div>
+        </div>
+        <a href="https://tickets.mltarts.com/" target=""><button
+          class="
+            text-2xl text-black
+            bg-yellow-500
+            h-10
+            w-48
+            rounded-xl
+            px-2
+            pb-1
+            mt-10
+            mx-auto
+            disabled
+            hover:bg-yellow-400
+          "
+        >
+        Buy Tickets
+      </button></a>
+    </div>
+  </div>
+</main>
+
+      <!-- Footer / contact -->
+    </div>
+    <!-- This is part of container that pushes footer to bottom of page -->
+    <div>
+      <footer>
+        <div>
+          <div>
+            <div>
+              <a
+                href="https://www.facebook.com/Murfreesboro-Little-Theatre-53156980658/"
+                target="new"
+                >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/murfreesboro_little_theatre/"
+                target="new"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+              <a href="https://twitter.com/borosliltheatre?lang=en" target="new"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </div>
+            <p>
+              Murfreesboro Little Theatre<br />
+              P.O. Box 952<br />
+              Murfreesboro, TN 37130<br />
+              (615) 893-9825
+            </p>
+          </div>
+        
+          <img src="./public/img/logo.png" />
+
+          <div>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="77PY97HNWCJ2L" />
+              <button
+              name="submit"
+              title="You will be redirected to PayPal. MLT does not store any of your payment information."
+              alt="You will be redirected to PayPal. MLT does not store any of your payment information.">
+                Donate
+              </button>
+            </form>
+            <p>
+              Murfreesboro Little Theatre<br />
+              is a 501(c)3 non-profit that<br />
+              relies on donations and ticket<br />
+              sales to serve the community.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

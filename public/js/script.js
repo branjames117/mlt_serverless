@@ -11,7 +11,7 @@ menuIcon.addEventListener('click', () => {
 });
 
 /* if on home page, run the following... */
-if (!currRoute) {
+if (currRoute === 'index.html' || !currRoute) {
   /* home page parallax effects */
   const parallax = document.getElementById('cta');
   const announcements = document.getElementById('announcements-background');
@@ -149,7 +149,7 @@ if (!currRoute) {
   function displayRandomHero() {
     const heroEl = document.getElementById('cta');
     const randomNumber = Math.floor(Math.random() * 5 + 1);
-    heroEl.style.backgroundImage = `url('/../img/mltarts${randomNumber}_opt.jpg')`;
+    heroEl.style.backgroundImage = `url('./public/img/mltarts${randomNumber}_opt.jpg')`;
   }
   displayRandomSponsor();
   displayRandomHero();
@@ -171,7 +171,7 @@ if (
 }
 
 /* if on history page, run the following scripts */
-if (currRoute.includes('history')) {
+if (currRoute === 'history.html') {
   const decadeBtns = [...document.getElementsByClassName('decade-btn')];
   const decades = [...document.getElementsByClassName('decade')];
 

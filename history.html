@@ -1,4 +1,66 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murfreesboro Little Theater</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/145a4f5b13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main site container -->
+    <div id="container">
+      <div>
+        <!-- header / nav bar -->
+        <header>
+          <nav id="full-nav">
+            <h1 id="menu-title">
+              <a href="/">
+                <div><span class="letter-accent">M</span>urfreesboro</div>
+                <div><span class="letter-accent">L</span>ittle</div>
+                <div><span class="letter-accent">T</span>heatre</div>
+              </a>
+            </h1>
+            <div id="menu-mobile">
+              <div id="floating-links">
+                <button id="floating-btn">
+                    <a href="./now-showing.html">Now Showing</a>
+                </button>
+            </div>
+              <div id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <ul id="menu-list-md"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+          <nav id="mobile-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./membership.html">Membership</a></li>
+              <li><a href="./history.html">Our History</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
 
 <main>
   <!-- history -->
@@ -21,9 +83,9 @@
       >
         <div class="grid grid-cols-1 gap-8 justify-between w-100 mx-4 xl:grid-cols-2 xl:mx-24">
           <div>
-            <img class="mx-auto rounded-xl" src="../img/history/house1.jpg" />
+            <img class="mx-auto rounded-xl" src="./public/img/history/house1.jpg" />
             <br />
-            <img class="mx-auto rounded-xl hidden xl:block" src="../img/history/house2.png" />
+            <img class="mx-auto rounded-xl hidden xl:block" src="./public/img/history/house2.png" />
           </div>
           <div class="leading-7 text-xl mx-0 px-0">
             <h4 class="mb-3">Click on a decade below to see what shows have graced our stage for over half a century!</h4>
@@ -553,7 +615,7 @@
                   <li>The Laramie Project, Directed by Jamie Leigh Stevens</li>
                 </ul>
               </div>
-              <img class="mx-auto mt-10 rounded-xl block xl:hidden" src="../img/history/house2.png" />
+              <img class="mx-auto mt-10 rounded-xl block xl:hidden" src="./public/img/history/house2.png" />
             </div>
           </div>
         </div>
@@ -561,4 +623,60 @@
   </div>
 </main>
 
-<%- include('partials/footer') %>
+      <!-- Footer / contact -->
+    </div>
+    <!-- This is part of container that pushes footer to bottom of page -->
+    <div>
+      <footer>
+        <div>
+          <div>
+            <div>
+              <a
+                href="https://www.facebook.com/Murfreesboro-Little-Theatre-53156980658/"
+                target="new"
+                >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/murfreesboro_little_theatre/"
+                target="new"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+              <a href="https://twitter.com/borosliltheatre?lang=en" target="new"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </div>
+            <p>
+              Murfreesboro Little Theatre<br />
+              P.O. Box 952<br />
+              Murfreesboro, TN 37130<br />
+              (615) 893-9825
+            </p>
+          </div>
+        
+          <img src="./public/img/logo.png" />
+
+          <div>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="77PY97HNWCJ2L" />
+              <button
+              name="submit"
+              title="You will be redirected to PayPal. MLT does not store any of your payment information."
+              alt="You will be redirected to PayPal. MLT does not store any of your payment information.">
+                Donate
+              </button>
+            </form>
+            <p>
+              Murfreesboro Little Theatre<br />
+              is a 501(c)3 non-profit that<br />
+              relies on donations and ticket<br />
+              sales to serve the community.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>
