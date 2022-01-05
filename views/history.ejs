@@ -1,0 +1,564 @@
+<%- include('partials/header') %>
+
+<main>
+  <!-- history -->
+  <section id="history">
+    <h2>Our History</h2>
+    <div class="rounded-2xl">
+      <div
+        class="
+          flex flex-col
+          gap-0
+          w-full
+          bg-black bg-opacity-50
+          pt-5
+          pb-10
+          px-1
+          mx-auto
+          text-center
+          rounded-2xl
+        "
+      >
+        <div class="grid grid-cols-1 gap-8 justify-between w-100 mx-4 xl:grid-cols-2 xl:mx-24">
+          <div>
+            <img class="mx-auto rounded-xl" src="../img/history/house1.jpg" />
+            <br />
+            <img class="mx-auto rounded-xl hidden xl:block" src="../img/history/house2.png" />
+          </div>
+          <div class="leading-7 text-xl mx-0 px-0">
+            <h4 class="mb-3">Click on a decade below to see what shows have graced our stage for over half a century!</h4>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-3">
+                <p><button id="decade-btn-0" class="decade-btn">1962 - 1971</button></p>
+                <p><button id="decade-btn-1" class="decade-btn">1972 - 1981</button></p>
+                <p><button id="decade-btn-2" class="decade-btn">1982 - 1991</button></p>
+                <p><button id="decade-btn-3" class="decade-btn">1992 - 2001</button></p>
+                <p><button id="decade-btn-4" class="decade-btn">2002 - 2011</button></p>
+                <p><button id="decade-btn-5" class="decade-btn">2012 - 2021</button></p>
+            </div>
+            <div id="history-view">
+              <div class="decade" id="decade0">
+                <h5 class="text-2xl text-yellow-500 mt-8">1962-1963 Season​</h5>
+                <ul>
+                  <li>Anniversary Waltz, Directed By BJ Huggins</li>
+                  <li>Country Girl, Directed By Lewis Rosenthal</li>
+                  <li>Sabrina Fair, Directed By Bill Wilson</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1963-1964 Season</h5>
+                <ul>
+                  <li>Pygmalion, Directed By Ed Howard</li>
+                  <li>Angel Street, Directed By Bren Huggins</li>
+                  <li>Picnic, Directed By Charles Dean</li>
+                  <li>The Tender Trap, Directed By Lorraine Evans</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1964-1965 Season</h5>
+                <ul>
+                  <li>A Shot in the Dark, Directed By Ed Howard</li>
+                  <li>Separate Tables, Directed By Ed Howard</li>
+                  <li>The Spiral Staircase, Directed By Bren Huggins</li>
+                  <li>The Moon is Blue, Directed By Helen Findley</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1965-1966 Season</h5>
+                <ul>
+                  <li>See How They Run, Directed By Joy Anthony</li>
+                  <li>The Gazebo, Directed By Bren Huggins</li>
+                  <li>The Glass Menagerie, Directed By David Gawlikowski</li>
+                  <li>Blithe Spirit, Directed By BJ Huggins</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1966-1967 Season</h5>
+                <ul>
+                  <li>Mary, Mary, Directed By Hal Christiansen</li>
+                  <li>Caine Mutiny Court Martial, Directed By Lane Boutwell</li>
+                  <li>Bus Stop, Directed By Tom Harris</li>
+                  <li>Deadly Game, Directed By Don Cowan</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1967-1968 Season</h5>
+                <ul>
+                  <li>Harvey, Directed By Joy Anthony & Carlton Sivells</li>
+                  <li>The Rainmaker, Directed By Bill Holland</li>
+                  <li>Any Wednesday, Directed By Tom Harris</li>
+                  <li>Stop the World, I Want to Get Off, Directed By Clyde Cromwell Jr</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1968-1969 Season</h5>
+                <ul>
+                  <li>The Odd Couple, Directed By Grandville S Ridley III</li>
+                  <li>A Delicate Balance, Directed By Tom Harris</li>
+                  <li>Never Too Late, Directed By Bren Huggins</li>
+                  <li>How to Succeed in Business Without Really Trying, Directed By Clyde Cromwell Jr</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1969-1970 Season</h5>
+                <ul>
+                  <li>One Acts: Crawling Around, Sandbox, Aria de Cap, Picnic on the Battlefield, Directed By Dot Harrison, Steve Cates, Jackie Archer, June Martin</li>
+                  <li>Luv, Directed By Jean Lind</li>
+                  <li>Once More With Feeling, Directed By Don Cowan</li>
+                  <li>Come Back, Little Sheba, Directed By Ruth Taylor</li>
+                  <li>A Thurber Carnival, Directed By Lane Boutwell</li>
+                  <li>Pajama Game, Directed By Clyde Cromwell Jr</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1970-1971 Season</h5>
+                <ul>
+                  <li>The Peanut Gallery, Directed By Jackie Archer & Tom Harris</li>
+                  <li>Bell, Book and Candle, Directed By Bill Holland</li>
+                  <li>Summer and Smoke, Directed By June McCash</li>
+                  <li>Lo and Behold, Directed By Anne Petty</li>
+                  <li>The Fantasticks, Directed By Michael Salzman</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1971-1972 Season</h5>
+                <ul>
+                  <li>Bitz, Directed By Charles Dean & Dot Harrison</li>
+                  <li>A Midsummer Night's Dream, Directed By Richard Jordan</li>
+                  <li>Andersonville Trial, Directed By Richard Boyd</li>
+                  <li>Everybody Loves Opal, Directed By Tom Harris</li>
+                  <li>Once Upon a Mattress, Directed By Tommy Gray</li>
+                </ul>
+              </div>
+              <div class="decade" id="decade1">
+                <h5 class="text-2xl text-yellow-500 mt-8">1972-1973 Season​</h5>
+                <ul>
+                  <li>Good Grief, A Griffin, Directed By Clyde Cromwell Jr</li>
+                  <li>Star-Spangled Girl, Directed By June McCash</li>
+                  <li>My Three Angels, Directed By Alex Harvey & Tom Harris</li>
+                  <li>I Never Sang for My Father, Directed By Richard Boyd</li>
+                  <li>Damn Yankees, Directed By Clyde Cromwell Jr & Hal Christiansen</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1973-1974 Season</h5>
+                <ul>
+                  <li>Ham and Cheesecake, Directed By Joe Keenan</li>
+                  <li>You're a Good Man Charlie Brown, Directed By Richard Boyd</li>
+                  <li>A Thousand Clowns, Directed By Tom O'Brien</li>
+                  <li>The Mouse Trap, Directed By Ralph Smith</li>
+                  <li>Mame, Directed By Clyde Cromwell Jr</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1974-1975 Season</h5>
+                <ul>
+                  <li>He Ain't Done Right by Nell, Directed By Charle Dean</li>
+                  <li>Wizard of Oz, Directed By James Reed</li>
+                  <li>Plaza Suite (3rd act only), Directed By Joe Keenan</li>
+                  <li>The Unsinkable Molly Brown, Directed By Richard Boyd</li>
+                  <li>6 Rms Riv Vu, Directed By Nan Keenan</li>
+                  <li>The Effects of Gamma Rays on Man-in-the-Moon Marigolds, Directed By Tom Harris</li>
+                  <li>Camelot, Directed By J R Wears</li>
+                  <li>Red, White and Blue Revue</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1975-1976 Season</h5>
+                <ul>
+                  <li>This 'n That, Directed By Richard Boyd</li>
+                  <li>Anything Goes, Directed By Richard Porter</li>
+                  <li>All the King's Men, Directed By Charles Dean</li>
+                  <li>The Sunshine Boys, Directed By Nan Keenan</li>
+                  <li>George M, Directed By Richard Boyd</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1976-1977 Season</h5>
+                <ul>
+                  <li>You Can’t Take it With You, Directed by Mark Drum</li>
+                  <li>Guys and Dolls, Directed by Ralph Smith</li>
+                  <li>Janus, Directed by Mary Jane Chrismon</li>
+                  <li>Special Tribute to Clyde Cromwell, Directed by Granville Ridley III</li>
+                  <li>Barefoot in the Park, Directed by Alex Harvey, Jr.</li>
+                  <li>The Roar of the Greasepaint, the Smell of the Crowd, Directed by Paul Macker</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1977-1978 Season</h5>
+                <ul>
+                  <li>Spoon River Anthology, Directed By Jerry Hatmaker</li>
+                  <li>Man of La Mancha, Directed By Virginia Jackson</li>
+                  <li>Plaza Suite, Directed By Mel Toombs</li>
+                  <li>One Flew Over the Cuckoo's Next, Directed By Nan Keenan</li>
+                  <li>Oliver, Directed By June and Bart McCash</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1978-1979 Season</h5>
+                <ul>
+                  <li>Alice in Wonderland, Directed By Mel Toombs</li>
+                  <li>Bye Bye Birdie, Directed By Mark Drum</li>
+                  <li>Twigs, Directed By Mary Jane Chrismon</li>
+                  <li>Someone's Waiting, Directed By Joe Keenan</li>
+                  <li>Little Mary Sunshine, Directed By Van Fox</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1979-1980 Season</h5>
+                <ul>
+                  <li>Pippin, Directed By Mary Jane Chrismon</li>
+                  <li>Tales of Winter (Reader's Theater), Directed By M & R Ordoubadian</li>
+                  <li>Who's Afraid of Virgina Woolf?, Directed By Nan Keenan</li>
+                  <li>The Mikado, Directed By Randie Blooding</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1980-1981 Season</h5>
+                <ul>
+                  <li>Cabaret, Directed By Mary Jane Chrismon</li>
+                  <li>Man and Woman (Reader's Theater), Directed By Margaret Ordoubadian</li>
+                  <li>Absurd Person Singular, Directed By Tom Harris</li>
+                  <li>Cyrano, Directed By Bart McCash</li>
+                </ul>
+
+              </div>
+              <div class="decade" id="decade2">
+                <h5 class="text-2xl text-yellow-500 mt-8">1982-1983 Season</h5>
+                <ul>
+                  <li>A Doll's House, Directed By Ayne Venanzio</li>
+                  <li>Death Trap, Directed By Joy Anthony</li>
+                  <li>Here's Love, Directed By Mary Jane Chrismon</li>
+                  <li>Cole, Directed By Susan Pinkerton</li>
+                  <li>Trifles, Directed By Susan Glaspell</li>
+                  <li>That Day, Directed By Michael Scanlon</li>
+                  <li>Cat on a Hot Tin Roof, Directed By Dot Harrison</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1983-1984 Season</h5>
+                <ul>
+                  <li>Dark of the Moon, Directed By Ted Gray</li>
+                  <li>Lion in Winter, Directed By Jerome Davis</li>
+                  <li>The Drunkard, Directed By Nan Keenan</li>
+                  <li>Cactus Flower, Directed By Frank Ginanni</li>
+                  <li>My Fair Lady, Directed By Denis Root</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1984-1985 Season</h5>
+                <ul>
+                  <li>Hans Christian Andersen, Directed By Dot Harrison</li>
+                  <li>Angels Fall, Directed By Jerome Davis</li>
+                  <li>Look Homeward Angel, Directed By Greg Grimsley</li>
+                  <li>Accommodations, Directed By Dee Anthony</li>
+                  <li>Diamond Studs, Directed By Richard Boyd</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1985-1986 Season</h5>
+                <ul>
+                  <li>The Wizard of Oz, Directed By James Reed</li>
+                  <li>Little Me, Directed By Susan Pinkerton</li>
+                  <li>Crimes of the Heart, Directed By Tom Harris</li>
+                  <li>Arsenic and Old Lace, Directed By Bart McCash, June McCash</li>
+                  <li>Fiddler on the Roof, Directed By Nan Keenan</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1986-1987 Season</h5>
+                <ul>
+                  <li>TO Murfreesboro With Love, Directed By Joe Keenan</li>
+                  <li>Annie, Directed By Robert Hiers</li>
+                  <li>The Dining Room, Directed By Rick Clark</li>
+                  <li>The Dresser, Directed By Darryl Deason</li>
+                  <li>The Sound of Music, Directed By Mary Jane Chrismon</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1987-1988 Season</h5>
+                <ul>
+                  <li>They're Playing Our Song</li>
+                  <li>The Prime of Miss Jean Brodie</li>
+                  <li>Winnie the Pooh, Directed By Diana Fugate</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1988-1989 Season</h5>
+                <ul>
+                  <li>Kiss Me Kate, Directed By Dot Harrison</li>
+                  <li>Agnes of God, Directed By Robert Hiers</li>
+                  <li>The Real Inspector Hound, Directed By Bruce Newman</li>
+                  <li>South Pacific, Directed By Dot Harrison & Diana Fugate</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1989-1990 Season</h5>
+                <ul>
+                  <li>Huckleberry Finn, Directed By Elizabeth Dugger</li>
+                  <li>Godspell, Directed By Michael McGee</li>
+                  <li>Barefoot in the Park, Directed By Ralph Smith</li>
+                  <li>The Best Christmas Pageant Ever, Directed By Terry Womack</li>
+                  <li>The Lady's Not for Burning, Directed By Stephen Dees</li>
+                  <li>Evita, Directed By M J Miller/V Jackson</li>
+                  <li>Bellefont, Directed By Tom Harris</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1990-1991 Season</h5>
+                <ul>
+                  <li>Pump Boys & Dinettes, Directed By Dale McGilliard</li>
+                  <li>The Odd Couple, Directed By Robin Overbey</li>
+                  <li>The Little Foxes, Directed By Eva Wright</li>
+                  <li>Crossing Delancey, Directed By Tim Davis</li>
+                </ul>
+              </div>
+              <div class="decade" id="decade3">
+                <h5 class="text-2xl text-yellow-500 mt-8">1992-1993 Season</h5>
+                <ul>
+                  <li>Mornings at Seven, Directed By Mary Jane Miller</li>
+                  <li>The Foreigner, Directed By George W. Manus Jr.</li>
+                  <li>Wait Until Dark, Directed By Susan Pinkerton</li>
+                  <li>Nunsense, Directed By Connie Bryant</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1993-1994 Season</h5>
+                <ul>
+                  <li>Steel Magnolias</li>
+                  <li>Greetings</li>
+                  <li>The Diary of Anne Frank</li>
+                  <li>Oklahoma</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1994-1995 Season</h5>
+                <ul>
+                  <li>Nunsense II</li>
+                  <li>Farndale..,</li>
+                  <li>Vanities</li>
+                  <li>On Golden Pond</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1995-1996 Season</h5>
+                <ul>
+                  <li>I Remember Mama</li>
+                  <li>Music Man</li>
+                  <li>Our Town</li>
+                  <li>Some Enchanted Evening</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1996-1997 Season</h5>
+                <ul>
+                  <li>I Do! I Do!</li>
+                  <li>Inherit the Wind</li>
+                  <li>Night of the Iguana</li>
+                  <li>Second Lady</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1997-1998 Season</h5>
+                <ul>
+                  <li>Jakes' Women</li>
+                  <li>Ten Little Indians</li>
+                  <li>The Complete Works of Shakespeare Abridged, Directed By Joe Sturgeon</li>
+                  <li>Bye Bye Birdie, Directed By Don Fahey</li>
+                  <li>The Boys Next Door</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1998-1999 Season</h5>
+                <ul>
+                  <li>Death Trap, Directed By Tom Harris</li>
+                  <li>Driving Miss Daisy, Directed By Bill Goodwin</li>
+                  <li>Barefoot in the Park, Directed By Brian Smith</li>
+                  <li>The Tempest, Directed By Joe Sturgeon</li>
+                  <li>A Funny Thing Happened on the Way to the Forum, Directed By Wayman Price</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">1999-2000 Season</h5>
+                <ul>
+                  <li>The Haunting of Hill House, Directed By Crosby Hunt</li>
+                  <li>It's a Wondeful Life, Directed By Brian Smith</li>
+                  <li>The Trip to Bountiful, Directed By Bill Goodwin</li>
+                  <li>Catfish Moon, Directed By Deborah Anderson</li>
+                  <li>The Fantasticks, Directed By Gayle Porterfield</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2000-2001 Season</h5>
+                <ul>
+                  <li>Cat on a Hot Tin Roof, Directed By Wayman Price & Shane Lowery</li>
+                  <li>Mame, Directed By Charlie Parker</li>
+                  <li>I Never Sang for My Father, Directed By Marjorie Miller</li>
+                  <li>The Sunshine Boys, Directed By Ione Smith</li>
+                  <li>Camelot, Directed By Keith Dixon</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2001-2002 Season</h5>
+                <ul>
+                  <li>Guys & Dolls, Directed By Wayman Price</li>
+                  <li>Misery, Directed By Shane Lowery</li>
+                  <li>A Community Christmas, Directed By Charlie Parker</li>
+                  <li>Romeo & Juliet, Directed By Ione Smith</li>
+                  <li>Born Yesterday, Directed By Majorie Clark</li>
+                </ul>
+              </div>
+              <div class="decade" id="decade4">
+                <h5 class="text-2xl text-yellow-500 mt-8">2002-2003 Season</h5>
+                <ul>
+                  <li>Godspell, Directed By Gayle Porterfield</li>
+                  <li>To Kill a Mockingbird, Directed By Shane Lowery</li>
+                  <li>Oliver, Directed By Ralph Smith</li>
+                  <li>A Midsummer Night's Dream, Directed By Jacob Truax</li>
+                  <li>Rosencrantz and Guildenstern are Dead, Directed By Joseph Womack</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2003-2004 Season</h5>
+                <ul>
+                  <li>1776, Directed By Joel Meriwether</li>
+                  <li>The Crucible, Directed By Joshua Paull</li>
+                  <li>Alice in Wonderland, Directed By Paige Mayercik</li>
+                  <li>12 Angry Men, Directed By Wayman Price</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2004-2005 Season</h5>
+                <ul>
+                  <li>South Pacific, Directed By Joel Meriwether</li>
+                  <li>Little Women, Directed By Chriistana Kergosien</li>
+                  <li>Snow White & the Seven Dwarves, Directed By Rita Salman</li>
+                  <li>The Miracle Worker, Directed By George W. Manus Jr.</li>
+                  <li>Come Back to the 5 and Dime, Jimmy Dean, Jimmy Dean, Directed By Christina Reinbold</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2005-2006 Season</h5>
+                <ul>
+                  <li>Bad Seed, Directed By Wayman Price</li>
+                  <li>Anne of Green Gables, Directed By Christina Reinbold</li>
+                  <li>Mouse Trap, Directed By Karen L. Martin</li>
+                  <li>Hot L Baltimore, Directed By Bob Roberts</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2006-2007 Season</h5>
+                <ul>
+                  <li>Wait Until Dark, Directed By Wayman Price</li>
+                  <li>Babes in Toyland, Directed By Rich E. Hogan</li>
+                  <li>True West, Directed By Karen L. Martin</li>
+                  <li>Kiss Me Kate, Directed By Charlie Parker</li>
+                  <li>Vanities, Directed By Christina Reinbold</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2007-2008 Season</h5>
+                <ul>
+                  <li>Hide & Seek, Directed By Dana Richardson</li>
+                  <li>Same Time Next Year, Directed By Shane Lowery</li>
+                  <li>The Face of Emmitt Till, Directed By Shane Coffey</li>
+                  <li>High Society, Directed By Wayman Price</li>
+                  <li>Ordinary People, Directed By Bob Roberts</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2008-2009 Season</h5>
+                <ul>
+                  <li>Over the River and Thru the Woods, Directed By William Keathley</li>
+                  <li>Fat Pig, Directed By E. Roy Lee</li>
+                  <li>Cheaper by the Dozen, Directed By Shane Lowery</li>
+                  <li>Working, Directed By Wayman Price</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2009-2010 Season</h5>
+                <ul>
+                  <li>The Diary of Anne Frank, Directed By Bryan M. Booth</li>
+                  <li>1940's Radio Hour, Directed By Carl Glenn with Wayman Price</li>
+                  <li>Don't Dress for Dinner, Directed By Sherry Booth Sunday</li>
+                  <li>How I Learned to Drive, Directed By Shane Lowery</li>
+                  <li>Best Little Whorehouse in Texas, Directed By Wayman Price</li>
+                  <li>Proof, Directed By Jamie Storvik</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2010-2011 Season</h5>
+                <ul>
+                  <li>The Boys Next Door, Directed By Chris Todd</li>
+                  <li>Mrs. Bob Cratchit's Wild Christmas Binge, Directed By Todd Robinson</li>
+                  <li>Jekyll & Hyde, The Musical, Directed By Shane Lowery</li>
+                  <li>The Children's Hour, Directed By Wayman Price</li>
+                  <li>Blithe Spirit, Directed By Pete Hiett III</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2011-2012 Season</h5>
+                <ul>
+                  <li>One Flew Over the Cuckoo's Next, Directed By Donna Seage</li>
+                  <li>Pippin, Directed By Arabelle Pollick & E. Roy Lee</li>
+                  <li>Sweeny Todd, Directed By Shane Lowery</li>
+                  <li>Our Miss Brooks, Directed By Wayman Price</li>
+                  <li>God's Favorite, Directed By Craig Core</li>
+                </ul>
+
+              </div>
+              <div class="decade" id="decade5">
+                <h5 class="text-2xl text-yellow-500 mt-8">2012-2013 Season</h5>
+                <ul>
+                  <li>Crimes of the Heart, Directed by Wayman Price</li>
+                  <li>A Funny Thing Happened on the Way to the Forum, Directed by Arabelle Pollick</li>
+                  <li>Cat on a Hot Tin Roof, Directed by Shane Lowery</li>
+                  <li>The 1940s Radio Hour, Directed by Danielle Araujo</li>
+                  <li>Death Trap, Directed by Todd Robinson</li>
+                  <li>Company, Directed by Dalton Reeves</li>
+                  <li>The Complete Works of Shakespeare (Abridged), Directed by Donna Seage</li>
+                  <li>The Tempest, Directed by Andy Ford</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2013-2014 Season</h5>
+                <ul>
+                  <li>Seussical, Directed by Shane Lowery</li>
+                  <li>Bent, Directed by Dalton Reeves</li>
+                  <li>Dinner With Friends, Directed by Andy Ford</li>
+                  <li>Dearly Departed, Directed by Bob Fish</li>
+                  <li>Chess, Directed by Wayman Price</li>
+                  <li>The Nerd, Directed by E. Roy Lee</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2014-2015 Season</h5>
+                <ul>
+                  <li>Sweet Charity, Directed by Cyndie Verbeten</li>
+                  <li>Hamlet, Directed by Andy Ford</li>
+                  <li>And Then There Were None, Directed By Jonathan Higdon</li>
+                  <li>Moon Over Buffalo, Directed by Ryan Vogel</li>
+                  <li>Peach Blossom, Directed by Wayman Price</li>
+                  <li>Avenue Q, Directed by Danielle Araujo</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2015-2016 Season</h5>
+                <ul>
+                  <li>Of Mice and Men, Directed by Frank Hasenmueller</li>
+                  <li>My Fair Lady, Directed by Melvin C. Spring</li>
+                  <li>The Exonerated, Directed by Sean Dixon</li>
+                  <li>Lend Me a Tenor, Directed by Charlie Parker</li>
+                  <li>Butterflies Are Free, Directed by Wayman Price</li>
+                  <li>Next To Normal, Directed by Georgia Hemrick</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2016-2017 Season</h5>
+                <ul>
+                  <li>The Crucible, Directed by Anderson Dodd</li>
+                  <li>Catfish Moon, Directed by Wayman Price</li>
+                  <li>Rumors, Directed by Alex DeHoff</li>
+                  <li>The Goat, Directed by Wayman Price</li>
+                  <li>Pocatello, Directed by KT Turner</li>
+                  <li>Arsenic and Old Lace, Directed by Melvin C. Spring</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2017-2018 Season</h5>
+                <ul>
+                  <li>Hedda Gabler, Directed by Joseph Stanley</li>
+                  <li>Race, Directed by Dalton Reeves</li>
+                  <li>Stop Kiss, Directed by Shane Lowery</li>
+                  <li>The Boy Friend, Directed by Wayman Price</li>
+                  <li>Vanya, Sonia, Masha, and Spike, Directed by KT Turner</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2018-2019 Season</h5>
+                <ul>
+                  <li>In the Next Room, or the vibrator play, Directed by Dalton Reeves</li>
+                  <li>Sylvia, Directed by Jennifer Grissom-Reeves</li>
+                  <li>Cabaret, Directed by Payton McCarthy</li>
+                  <li>The Pillowman, Directed by Brenden Taylor</li>
+                  <li>Fun Home, Directed by Stephen Burnette</li>
+                  <li>The Little Foxes, Directed by Wayman Price</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2019-2020 Season</h5>
+                <ul>
+                  <li>A Piece of My Heart, Directed by Pete Hiett</li>
+                  <li>The Volunteer, Directed by Zoe Zent</li>
+                  <li>Cat on a Hot Tin Roof, Directed by Shane Lowery</li>
+                  <li>Spoon River Anthology (Virtual), Directed by Shane Lowery and Jess Townsend</li>
+                  <li>Tales from Neverland (Virtual), Directed by Emma Hawkins</li>
+                </ul>
+
+                <h5 class="text-2xl text-yellow-500 mt-8">2020-2021 Season</h5>
+                <ul>
+                  <li>Peering Into Darkness, Directed by Shane Lowery</li>
+                  <li>Hamlet, Directed by Shane Lowery and Zoe Zent</li>
+                  <li>Home for the Holidays (Virtual), Directed by Madison Tobeck and Jordan Dickerson</li>
+                  <li>A Midsummer Night’s Dream, Directed by Shane Lowery</li>
+                  <li>The Laramie Project, Directed by Jamie Leigh Stevens</li>
+                </ul>
+              </div>
+              <img class="mx-auto mt-10 rounded-xl block xl:hidden" src="../img/history/house2.png" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

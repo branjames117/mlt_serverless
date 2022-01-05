@@ -1,0 +1,79 @@
+<%- include('partials/header') %>
+
+<main>
+  <!-- now showing -->
+  <section id="now-showing">
+    <h2>Now Showing</h2>
+    <div class="rounded-2xl">
+      <div
+        class="
+          flex flex-col
+          gap-0
+          w-full
+          bg-black bg-opacity-50
+          pt-5
+          pb-10
+          px-1
+          mx-auto
+          text-center
+          rounded-2xl
+        "
+      >
+        <h3 class="text-4xl text-center text-yellow-500 mb-0"><span class="letter-accent">G</span>rand <span class="letter-accent">F</span>inale</h3>
+        <h4 class="text-2xl mb-5">By Lauren Street</h4>
+        <a href="https://tickets.mltarts.com/" target=""><button
+          class="
+            text-2xl text-black
+            bg-yellow-500
+            h-10
+            w-48
+            rounded-xl
+            px-2
+            pb-1
+            mb-4
+            mx-auto
+            disabled
+            hover:bg-yellow-400
+          "
+        >
+        Buy Tickets
+      </button></a>
+      <p class="mb-8">Please review our <a href="/ticket-policy">Ticket Policy</a> before purchasing your ticket(s).</p>
+        <div class="grid grid-cols-1 gap-8 justify-between w-100 mx-4 w-100 xl:grid-cols-2 xl:mx-24">
+          <div class="leading-7 mx-0 px-0">
+            <p>Directed by Zoë Zent</p>
+            <p>January 6, 7, 8, 9<br />
+            Thursday-Saturday 7pm<br />
+            Sunday 2pm</p>
+            <p>The Walnut House<br />
+            116 N Walnut St<br />
+            Murfreesboro, TN 37130-3554</p>
+            <p class="text-left mt-8">It's the day of Granddaddy's funeral, and no one has showed up. Rebecca is distraught about her Daddy dying. Caroline and Kathryn are apathetic, spiteful and full of smart-aleck remarks. Caroline is hateful and Kathryn is more interested in getting to a dance later that evening. Evan arrives late with his boyfriend Marshall (who Kathryn keeps hitting on). Evan seems only interested in drinking and leaving especially after insensitive and racist remarks from his Aunt Rebecca about Marshall and their relationship. Brother George is kindly confused about all the drama and frequently falling asleep. Amidst the fighting, the lack of mourners, the botched eulogy, they try to carry the casket out only for the unthinkable to happen. This adds to the hysterics, which culminate in revelations of family secrets, clearing of misunderstandings, and a final understanding of why no one showed up for the funeral.</p>
+          </div>
+          <div>
+            <img class="mb-6 rounded-2xl" src="../img/now-showing/slide2.jpg" />
+            <img class="rounded-2xl" src="../img/now-showing/slide1.jpg" />
+          </div>
+        </div>
+        <a href="https://tickets.mltarts.com/" target=""><button
+          class="
+            text-2xl text-black
+            bg-yellow-500
+            h-10
+            w-48
+            rounded-xl
+            px-2
+            pb-1
+            mt-10
+            mx-auto
+            disabled
+            hover:bg-yellow-400
+          "
+        >
+        Buy Tickets
+      </button></a>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
