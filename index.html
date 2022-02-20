@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
     <script
       src="https://kit.fontawesome.com/145a4f5b13.js"
       crossorigin="anonymous"
@@ -45,6 +46,7 @@
             <ul id="menu-list-md">
               <li><a href="./">Home</a></li>
               <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./auditions.html">Auditions</a></li>
               <li><a href="./membership.html">Membership</a></li>
               <li><a href="./history.html">Our History</a></li>
               <li><a href="./about-us.html">About Us</a></li>
@@ -54,6 +56,7 @@
             <ul>
               <li><a href="./">Home</a></li>
               <li><a href="./now-showing.html">Now Showing</a></li>
+              <li><a href="./auditions.html">Auditions</a></li>
               <li><a href="./membership.html">Membership</a></li>
               <li><a href="./history.html">Our History</a></li>
               <li><a href="./about-us.html">About Us</a></li>
@@ -586,5 +589,17 @@
     </div>
     <script src="./public/js/script.js"></script>
     <script src="./public/js/index_script.js"></script>
+    <script>
+      (function () {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('./service-worker.js')
+            .then(() => console.log('Service Worker registered successfully.'))
+            .catch((error) =>
+              console.log('Service Worker registration failed:', error)
+            );
+        }
+      })();
+    </script>
   </body>
 </html>

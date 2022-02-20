@@ -1,0 +1,12 @@
+{
+  "name": "MLT Arts",
+  "short_name": "MLTA",
+  "icons": [],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "description": "Official website for Murfreesboro Little Theatre."
+}
