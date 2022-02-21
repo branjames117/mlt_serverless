@@ -83,7 +83,7 @@ sponsors.forEach((sponsor) => {
   sponsorObserver.observe(sponsor);
 });
 
-/* home page sponsor spotlight randomizer, generates 2 unique sponsors */
+/* home page sponsor spotlight randomizer, generates 3 unique sponsors */
 function displayRandomSponsor() {
   const sponsorNodes = [...document.getElementsByClassName('sponsor')];
   const possibleSponsorIndexes = [];
@@ -132,7 +132,7 @@ function displayRandomSponsor() {
 function displayRandomHero() {
   const heroEl = document.getElementById('cta');
   const randomNumber = Math.floor(Math.random() * 5 + 1);
-  heroEl.style.backgroundImage = `url('./public/img/mltarts${randomNumber}_opt.jpg')`;
+  heroEl.style.backgroundImage = `url('/public/img/mltarts${randomNumber}_opt.jpg')`;
 }
 displayRandomSponsor();
 displayRandomHero();
