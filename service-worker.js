@@ -26,11 +26,6 @@ const FILES_TO_CACHE = [
   './public/img/sponsors/tnlicense.jpg',
   './public/img/curtain.jpg',
   './public/img/logo.png',
-  './public/img/mltarts1_opt.jpg',
-  './public/img/mltarts2_opt.jpg',
-  './public/img/mltarts3_opt.jpg',
-  './public/img/mltarts4_opt.jpg',
-  './public/img/mltarts5_opt.jpg',
 ];
 
 self.addEventListener('install', function (e) {
