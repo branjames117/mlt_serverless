@@ -132,7 +132,7 @@ function displayRandomSponsor() {
 function displayRandomHero() {
   const heroEl = document.getElementById('cta');
   const randomNumber = Math.floor(Math.random() * 5 + 1);
-  heroEl.style.backgroundImage = `url('/public/img/mltarts${randomNumber}_opt.jpg')`;
+  heroEl.style.backgroundImage = `url('./public/img/mltarts${randomNumber}_opt.jpg')`;
 }
 displayRandomSponsor();
 displayRandomHero();
