@@ -19,6 +19,18 @@ const FILES_TO_CACHE = [
   './public/js/history_script.js',
   './public/js/index_script.js',
   './public/js/script.js',
+  './public/img/history/house1.jpg',
+  './public/img/history/house2.png',
+  './public/img/sponsors/penguinproject.jpg',
+  './public/img/sponsors/tnartscommission.jpg',
+  './public/img/sponsors/tnlicense.jpg',
+  './public/img/curtain.jpg',
+  './public/img/logo.png',
+  './public/img/mltarts1_opt.jpg',
+  './public/img/mltarts2_opt.jpg',
+  './public/img/mltarts3_opt.jpg',
+  './public/img/mltarts4_opt.jpg',
+  './public/img/mltarts5_opt.jpg',
 ];
 
 self.addEventListener('install', function (e) {
